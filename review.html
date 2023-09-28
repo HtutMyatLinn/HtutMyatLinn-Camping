@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review</title>
+
+  <!-- Icon Scout -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+  <!-- Header Nav -->
+  <header>
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./campingequipment.html">Camping Equipment</a>
+        <a href="./furniture.html">Furniture</a>
+        <a href="./review.html">Reviews</a>
+        <a href="./basket.html">Basket</a>
+        <a href="./offerandpackages.html">Offers and Packages</a>
+      </div>
+    </div>
+  </header>
+  <!-- review here -->
+
+<main> 
+  <section id="review-form">
+    <h2 class="title-main">Review Here</h2>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form>
+            <div class="row">
+              <div class="col-50">
+                <h3>Customer Review Form</h3>
+                <div class="choose-photo"> 
+                  <input type="file" name="photo">
+                </div>
+                <div class="choose-avatar">
+                  <img src="./asset/Images/avatar.png" alt="img">
+                </div>
+                
+                <div class="row">
+                  <div class="col-50">
+                    <label for="firstname">
+                    <i class="fa-solid fa-user"></i>
+                      First Name</label>
+                    <input type="text" id="firstname" name="state" placeholder="John">
+                  </div>
+                  <div class="col-50">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="zip" placeholder="Lucas">
+                  </div>
+                </div>
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="Lucas@example.com">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="United Kingdom">
+    
+                <div class="row">
+                  <div class="col-50">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="UK">
+                  </div>
+                  <div class="col-50">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="10001">
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-50">
+                <h3>Payment</h3>
+                <label>Accepted Cards</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa"></i>
+                  <i class="fa fa-cc-amex"></i>
+                  <i class="fa fa-cc-mastercard"></i>
+                  <i class="fa fa-cc-discover"></i>
+                </div>
+                <div class="selection-card">
+                  <select name="payment-card" id="payment-card">
+                    <option value="Visa">Visa</option>
+                    <option value="Amex" selected>Amex</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Discover">Discover</option>
+                  </select>
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="John Lucas">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="December">
+                <div class="row">
+                  <div class="col-50">
+                    <label for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2024">
+                  </div>
+                  <div class="col-50">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="253">
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+            <input type="submit" value="Continue to checkout" class="btn">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <!-- Review -->
+  <section id="review">
+    <h2 class="title-main">Reviews</h2>
+    <div class="review-container">
+      <div class="review-items">
+        <img src="./asset/Images/chair.png" alt="image">
+        <div class="review-contents">
+          <div class="review-contents-container">
+            <div class="user-icon"> <i class="fa fa-user"></i>
+              <p class="user-name">Ei Mon Myint</p>
+            </div>
+            <p class="comment">I recently purchased this camping chair, and I must say it has exceeded my expectations in many ways. Here's why I'm giving it a solid 4.5 stars.</p>
+            <div class="review-rating">
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </p>
+              <p class="rating-point">
+                4.5
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review-items">
+
+        <img src="./asset/Images/hikingbag.png" alt="image">
+
+        <div class="review-contents">
+          <div class="review-contents-container">
+            <div class="user-icon"> <i class="fa fa-user"></i>
+              <p class="user-name">Lucas</p>
+            </div>            
+            <p class="comment">Spacious, durable, comfortable. Multiple compartments, easy access. Quality zippers. Slight weight issue. Overall, great value for backpacking adventures - 5 stars.</p>
+            <div class="review-rating">
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </p>
+              <p class="rating-point">
+                5.0
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review-items">
+
+        <img src="./asset/Images/busket.png" alt="image">
+
+        <div class="review-contents">
+          <div class="review-contents-container">
+            <div class="user-icon"> <i class="fa fa-user"></i>
+              <p class="user-name">Felix</p>
+            </div>           
+             <p class="comment">Impressive insulation, keeps items cold for hours. Durable construction. Convenient size. Handle could be sturdier. A reliable cooler bucket - 3 stars.</p>
+            <div class="review-rating">
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </p>
+              <p class="rating-point">
+                3.0
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="brand-icon"></div>
+        <div class="social-container">
+          <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="uil uil-facebook-f"></i></a>
+          </div>
+          <div class="social-icons">
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F"><i class="uil uil-twitter"></i></a>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.instagram.com"><i class="uil uil-instagram"></i></a>
+          </div>
+          <div class="social-icons">
+            <a href="https://mm.linkedin.com"><i class="uil uil-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="navbar-footer">
+          <ul>
+            <li class="title-footer">
+              Navigation
+            </li>
+            <li>
+              <a href="./index.html">
+                <i class="uil uil-angle-double-right"></i>Home
+              </a>
+            </li>
+            <li>
+              <a href="./campingequipment.html">
+                <i class="uil uil-angle-double-right"></i>Camping Equipment
+              </a>
+            </li>
+            <li>
+              <a href="./furniture.html">
+                <i class="uil uil-angle-double-right"></i>Furniture
+              </a>
+            </li>
+            <li>
+              <a href="./review.html">
+                <i class="uil uil-angle-double-right"></i>Reviews
+              </a>
+            </li>
+            <li>
+              <a href="./basket.html">
+                <i class="uil uil-angle-double-right"></i>Basket
+              </a>
+            </li>
+            <li>
+              <a href="./offerandpackages.html">
+                <i class="uil uil-angle-double-right"></i>Offers and Packages
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="aboutUs-footer">
+          <div class="title-footer">
+            About us
+          </div>
+          <p>Hello and welcome to Retail Camping Company! We are your journey buddies, providing high-quality outdoor
+            gear. We provide a varied assortment of camping needs with a commitment to quality and a passion for
+            discovery. Our mission is to provide other adventurers with dependable gear that enhances their outdoor
+            adventures. We're here to elevate your adventure, from durable tents to ergonomic hiking bags. Join us as we
+            celebrate the great outdoors with Retail Camping Company gear.</p>
+        </div>
+
+        <div class="contact-footer">
+          <div class="title-footer">
+            Contact us
+          </div>
+          Email: rcc.camping@mail.ru
+          <input type="text" placeholder="Enter Email Address">
+          <button type="submit">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="copyright">
+      © 2021 All Rights Reserved By Retail Camping Company
+    </div>
+  </footer>
+</body>
+
+</html>

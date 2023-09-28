@@ -1,0 +1,1655 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #3C486B;
+    --secondary-color: #eaeaea;
+    --third-color: #F9D949;
+    --fourth-color: #50C878;
+    --light: #FFFFFF;
+}
+
+section {
+    min-height: 80vh;
+    padding: 80px;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+    background-color: var(--secondary-color);
+}
+
+.title-main {
+    font-family: Poppins;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: var(--primary-color);
+}
+
+
+
+.nav * {
+    box-sizing: border-box;
+}
+
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: var(--primary-color);
+    position: relative;
+    z-index: 999;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav>.nav-header>.nav-title::after {
+    content: "Retail Camping Company";
+    display: inline-block;
+    font-size: 1.6em;
+    position: absolute;
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+    font-family: Poppins;
+    padding: 10px 10px 10px 20px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Poppins;
+    color: var(--secondary-color);
+}
+
+.nav>.nav-links>a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+/*SlideShow*/
+.SlideShow {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.wrapper img {
+    width: 100%;
+    /* Change this to 100% to make the images fill the slideshow container */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-20%);
+    }
+
+    40% {
+        transform: translateX(-40%);
+    }
+
+    60% {
+        transform: translateX(-60%);
+    }
+
+    80% {
+        transform: translateX(-80%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/*--Camping Panal--*/
+#camp-panal {
+    min-height: auto;
+}
+
+#camp-panal h2 {
+
+    text-align: center;
+    font-family: Mani;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+}
+
+#camp-panal .photo-data {
+
+    display: flex;
+    margin-top: 5em;
+    justify-content: space-around;
+
+}
+
+#camp-panal .photo-data img {
+
+    width: 600px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 3px solid var(--light);
+    filter: drop-shadow(15px 20px 15px #3C486B);
+}
+
+#camp-panal .photo-data .text {
+
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+    text-align: justify;
+    line-height: 2em;
+
+
+}
+
+#camp-panal .photo-data p {
+
+    font-family: Poppins;
+}
+
+#camp-panal h2 {
+
+    position: absolute;
+    margin-left: 43.8%;
+    transform: translate(-50%, -50%);
+    font-family: Poppins;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--light);
+    font-weight: normal;
+    cursor: pointer;
+
+}
+
+#camp-panal h2 {
+
+    color: var(--primary-color);
+    padding-left: 35px;
+}
+
+#camp-panal .photo-data {
+    position: relative;
+}
+
+.home-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 41.15vw;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: var(--third-color);
+    border-radius: 50px;
+    font-family: Poppins;
+
+
+}
+
+.photo-data:hover .overlay {
+    opacity: 1;
+}
+
+.text1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* pop-up */
+
+#popup .popup-content legend {
+    color: var(--secondary-color);
+}
+
+.center a:hover {
+    background-color: var(--third-color);
+    transition: 0.5s;
+}
+
+.center a {
+    padding: 9px 10px;
+    background: var(--light);
+    color: var(--primary-color);
+    font-size: 26px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 0px 0px 100px 800px;
+}
+
+#popup {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    text-align: center;
+}
+
+#popup .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    height: 400px;
+    padding: 10px 10px;
+    background: var(--primary-color);
+    border-radius: 20px;
+}
+
+.popup-content table label {
+    color: var(--secondary-color);
+}
+
+.popup-content fieldset {
+    margin-top: 32.5px;
+}
+
+#popup a.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#popup a.close-popup:hover {
+    color: var(--third-color);
+    transition: 0.5s;
+}
+
+#popup:target {
+    display: inline-block;
+}
+
+#popup .popup-content input:focus {
+    background-color: var(--third-color);
+}
+
+#popup .popup-content input:focus-visible {
+    outline: none;
+}
+
+#popup .popup-content input:active {
+    background-color: var(--fourth-color);
+}
+
+#popup button:hover {
+    background-color: var(--third-color);
+    transition: 0.5s;
+}
+
+#popup button:active {
+    background-color: var(--fourth-color);
+    transition: 0.5s;
+}
+
+
+/* map and youtube */
+.map iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.youtube iframe {
+    width: 100%;
+    height: 600px;
+}
+
+/* Camping Equipment and Offerandpackage */
+#offernpackage {
+    min-height: auto;
+}
+
+#offernpackage .package-card {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#offernpackage .package-card .pack-1 {
+    margin: 0 2em;
+}
+
+#offernpackage .plan {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    padding: 10px;
+    background-color: #fff;
+    color: var(--light);
+    max-width: 350px;
+    font-family: Poppins;
+}
+
+#offernpackage .plan strong {
+    font-weight: 600;
+    color: var(--light);
+}
+
+#offernpackage .plan .inner {
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    position: relative;
+}
+
+#offernpackage .plan .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--third-color);
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#offernpackage .plan .pricing small {
+    color: #707a91;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+}
+
+#offernpackage .plan .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--light);
+}
+
+#offernpackage .plan .title+* {
+    margin-top: 0.75rem;
+}
+
+#offernpackage .plan .info+* {
+    margin-top: 1rem;
+}
+
+#offernpackage .plan .features {
+    display: flex;
+    flex-direction: column;
+}
+
+#offernpackage .plan .features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#offernpackage .plan .features li+* {
+    margin-top: 0.75rem;
+}
+
+#offernpackage .plan .features .icon {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+#offernpackage .plan .features .icon-gold {
+    background-color: var(--third-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+#offernpackage .plan .features .icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+#offernpackage .plan .features .icon-gold svg {
+    width: 14px;
+    height: 14px;
+}
+
+#offernpackage .plan .features+* {
+    margin-top: 1.25rem;
+}
+
+#offernpackage .plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#offernpackage .plan .button {
+    background-color: var(--third-color);
+    border-radius: 6px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+    transition: all ease-in-out .3s;
+}
+
+#offernpackage .plan .button:hover,
+.plan .button:focus {
+    background-color: var(--secondary-color);
+}
+
+/* Camping Equipment */
+
+.search {
+    margin-bottom: 80px;
+}
+
+.input-container {
+    width: 220px;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: calc(50% + 5px);
+    transform: translateY(calc(-50% - 5px));
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    transition: .2s linear;
+    border: 2.5px solid black;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.input:focus {
+    outline: none;
+    border: 0.5px solid black;
+    box-shadow: -5px -5px 0px black;
+}
+
+.input-container:hover>.icon {
+    animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+
+    0%,
+    100% {
+        transform: translateY(calc(-50% - 5px)) scale(1);
+    }
+
+    50% {
+        transform: translateY(calc(-50% - 5px)) scale(1.1);
+    }
+}
+
+#campingequi1 {
+    min-height: auto;
+}
+
+#campingequi1 .item-container {
+    display: flex;
+    justify-content: center;
+}
+
+#campingequi1 .item-card {
+    background-color: var(--light);
+    width: 250px;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 1.5em;
+}
+
+#campingequi1 .image-container {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    transition: all ease-in-out .4s;
+}
+
+#campingequi1 .image-container embed {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+#campingequi1 .image-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+#campingequi1 .item-title {
+    text-align: left;
+    font-family: Poppins;
+    font-size: 2em;
+    margin-top: 0.5em;
+    color: var(--primary-color);
+}
+
+#campingequi1 .item-detail {
+    font-family: Poppins;
+    color: var(--primary-color);
+}
+
+#campingequi1 .purchase-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#campingequi1 .purchase-container p {
+    font-family: Poppins;
+    font-size: 1em;
+    line-height: 10px;
+    color: var(--primary-color);
+}
+
+#campingequi1 .purchase {
+    font-family: Poppins;
+    height: auto;
+    background-color: var(--third-color);
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    transition: all ease-in-out .3s;
+    font-size: 1em;
+    padding: 7px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#campingequi1 .discount {
+    width: auto;
+    color: var(--fourth-color) !important;
+    transition: all ease-in-out .3s;
+    border-radius: 0 7px 0 5px;
+    font-family: Poppins;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#campingequi1 .item-card:hover .image-container {
+    background-color: var(--third-color);
+    box-shadow: 0px 10px 10px #0000005A;
+    transform: translate(0, -15%);
+}
+
+#campingequi1 .purchase:hover {
+    transform: scale(0.9);
+}
+
+/* Camping Equipment regular */
+#campingequi {
+    min-height: auto;
+}
+
+#campingequi .item-container {
+    display: flex;
+    justify-content: center;
+}
+
+#campingequi .item-card {
+    background-color: var(--light);
+    width: 250px;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 1.5em;
+}
+
+#campingequi .image-container {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    transition: all ease-in-out .4s;
+}
+
+#campingequi .image-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+#campingequi .item-title {
+    text-align: left;
+    font-family: Poppins;
+    font-size: 2em;
+    margin-top: 0.5em;
+    color: var(--primary-color);
+}
+
+#campingequi .item-detail {
+    font-family: Poppins;
+    color: var(--primary-color);
+}
+
+#campingequi .purchase-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#campingequi .purchase-container p {
+    font-family: Poppins;
+    font-size: 1em;
+    line-height: 10px;
+    color: var(--primary-color);
+}
+
+#campingequi .purchase {
+    font-family: Poppins;
+    height: auto;
+    background-color: var(--third-color);
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    transition: all ease-in-out .3s;
+    font-size: 1em;
+    padding: 7px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#campingequi .discount {
+    width: auto;
+    color: var(--fourth-color) !important;
+    transition: all ease-in-out .3s;
+    border-radius: 0 7px 0 5px;
+    font-family: Poppins;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#campingequi .item-card:hover .image-container {
+    background-color: var(--third-color);
+    box-shadow: 0px 10px 10px #0000005A;
+    transform: translate(0, -15%);
+}
+
+#campingequi .purchase:hover {
+    transform: scale(0.9);
+}
+
+/* Furniture */
+#furniture {
+    min-height: auto;
+}
+
+#furniture .item-container {
+    display: flex;
+    justify-content: center;
+}
+
+#furniture .item-card {
+    background-color: var(--light);
+    width: 250px;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 1.5em;
+}
+
+#furniture .image-container {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    transition: all ease-in-out .4s;
+}
+
+#furniture .image-container img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+#furniture .item-title {
+    text-align: left;
+    font-family: Poppins;
+    font-size: 2em;
+    margin-top: 0.5em;
+    color: var(--primary-color);
+}
+
+#furniture .item-detail {
+    font-family: Poppins;
+    color: var(--primary-color);
+}
+
+#furniture .purchase-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#furniture .purchase-container p {
+    font-family: Poppins;
+    font-size: 1em;
+    line-height: 10px;
+    color: var(--primary-color);
+}
+
+#furniture .purchase {
+    font-family: Poppins;
+    height: auto;
+    background-color: var(--third-color);
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    transition: all ease-in-out .3s;
+    font-size: 1em;
+    padding: 7px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+#furniture .discount {
+    width: auto;
+    color: var(--fourth-color) !important;
+    transition: all ease-in-out .3s;
+    border-radius: 0 7px 0 5px;
+    font-family: Poppins;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#furniture .item-card:hover .image-container {
+    background-color: var(--third-color);
+    box-shadow: 0px 10px 10px #0000005A;
+    transform: translate(0, -15%);
+}
+
+#furniture .purchase:hover {
+    transform: scale(0.9);
+}
+
+/* Review */
+
+
+#review-form {
+    font-family: Poppins;
+}
+
+.row {
+    /* IE10 */
+    display: flex;
+    /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.choose-photo {
+    display: flex;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.choose-avatar {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 90px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.col-25 {
+    flex: 25%;
+}
+
+.col-50 {
+    flex: 50%;
+
+}
+
+.col-75 {
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+
+.container {
+    background-color: var(--light);
+    padding: 5px 20px 15px 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+input[type=text]:focus-visible {
+    outline: none;
+}
+
+input[type=text]:focus {
+    color: var(--primary-color);
+    background-color: var(--third-color);
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: var(--third-color);
+}
+
+.btn:active {
+    background-color: var(--fourth-color);
+}
+
+.fa-cc-visa {
+    color: navy;
+}
+
+.fa-cc-amex {
+    color: blue;
+}
+
+.fa-cc-mastercard {
+    color: red;
+}
+
+.fa-cc-discover {
+    color: orange;
+}
+
+.selection-card {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#review {
+    min-height: auto;
+}
+
+#review .review-contents {
+    display: flex;
+    align-items: start;
+    cursor: pointer;
+}
+
+#review .review-items {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--light);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 2em 7em;
+}
+
+#review .review-items img {
+    width: 250px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+#review .review-contents-container {
+    padding: 0 3em;
+}
+
+#review .review-items .item-title {
+    font-family: Poppins;
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+#review .review-items .comment {
+    font-family: Poppins;
+    color: var(--primary-color);
+}
+
+#review .review-rating {
+    display: flex;
+}
+
+#review .review-rating p {
+    font-family: Poppins;
+    font-size: 1.5em;
+    margin: 0 2em 0 0;
+    color: var(--third-color);
+}
+
+#review .review-rating .rating-point {
+    color: var(--primary-color);
+}
+
+.user-icon {
+    display: inline-block;
+}
+
+.user-name {
+    display: inline-block;
+    font-family: Poppins;
+    font-size: 1.1em;
+}
+
+/* Basket */
+
+#basket {
+    min-height: auto;
+}
+
+#basket .basket-title {
+    text-align: center;
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 2.5em;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table .t-head {
+    font-family: Poppins;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    padding: 0.5em;
+    color: var(--primary-color);
+    background: var(--third-color);
+}
+
+table .t-head td {
+    font-family: Poppins;
+    padding: 1.5em;
+    background-color: var(--third-color);
+}
+
+#basket td img {
+    height: 100px;
+}
+
+#basket table tr {
+    max-height: 40px;
+    cursor: pointer;
+    font-family: Poppins;
+}
+
+#basket table .qty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+}
+
+#basket table .qty .qty-am {
+    padding: 0 .7em;
+}
+
+#basket table .qty button {
+    width: 30px;
+    height: 30px;
+    background-color: var(--third-color);
+    box-shadow: none;
+    border: 1.7px solid orange;
+    font-size: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+#basket table .qty button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+#basket .desc {
+    text-align: left !important;
+    padding-left: 10px;
+}
+
+#basket tr:nth-child(odd) {
+    background-color: var(--light);
+}
+
+#basket tr:nth-child(even) {
+    background-color: #b8a3ff3f;
+}
+
+#basket .remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#basket .remove .del {
+    width: 30px;
+    line-height: 30px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    height: 30px;
+    border-radius: 50%;
+    transition: all ease-in-out .3s;
+}
+
+#basket .remove .del:hover {
+    background-color: #FF0000;
+    color: var(--light);
+}
+
+#basket tfoot .total {
+    background-color: var(--third-color);
+}
+
+table tfoot td {
+    padding: 1em;
+}
+
+.res-basket {
+    display: none;
+}
+
+
+/* Footer */
+footer {
+    background: var(--primary-color);
+    margin: 0;
+    padding: 2em;
+    padding-bottom: 0;
+}
+
+footer .title-footer {
+    font-family: Poppins;
+    color: var(--third-color);
+    font-size: 1.5em;
+    letter-spacing: 0.1px;
+    text-align: left;
+    margin: 1.5em 0 1em 0.2em;
+    cursor: pointer;
+
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 5em;
+    font-family: Poppins;
+}
+
+.footer-top .brand-icon {
+    font-size: 2em;
+    color: var(--secondary-color);
+    letter-spacing: 3px;
+}
+
+.footer-top .brand-icon::after {
+    content: "Retail Camping Company";
+}
+
+.footer-top .social-container {
+    display: flex;
+    font-size: 1.5em;
+}
+
+.footer-top .social-icons {
+    margin: 0 .3em;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    background-color: var(--secondary-color);
+    transition: all ease-in-out .3s;
+}
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-bottom>div {
+    margin: 0 2em;
+    max-width: 350px;
+}
+
+.footer-top .social-icons a {
+    color: var(--primary-color);
+}
+
+.footer-top .social-icons:hover {
+    background-color: var(--third-color);
+}
+
+footer .footer-bottom ul {
+    margin: 0;
+}
+
+footer .navbar-footer ul>li {
+    list-style: none;
+    line-height: 30px;
+    font-family: Poppins;
+}
+
+footer .navbar-footer li>a {
+    color: var(--light);
+    text-decoration: none;
+}
+
+footer .navbar-footer a>i {
+    color: var(--third-color);
+}
+
+footer .aboutUs-footer p {
+    font-family: Poppins;
+    color: var(--secondary-color);
+}
+
+footer .contact-footer {
+    padding-right: 50px;
+    font-family: Poppins;
+    color: var(--secondary-color);
+}
+
+footer .contact-footer input {
+    min-width: 100%;
+    margin-top: 1em;
+    border: none;
+    padding-left: 1em;
+    height: 40px;
+    background-color: var(--secondary-color);
+    font-family: Poppins;
+    border-bottom: 2px solid var(--third-color);
+    outline: none;
+    color: var(--primary-color);
+    font-size: 1em;
+    transition: all ease-in-out .4s;
+}
+
+footer .contact-footer input:focus {
+    background-color: var(--third-color);
+    border-bottom: 2px solid var(--fourth-color);
+}
+
+footer .contact-footer input::placeholder {
+    color: #3333339a;
+}
+
+footer .contact-footer button {
+    background: transparent;
+    height: 40px;
+    font-size: 1em;
+    margin-top: 1em;
+    border: 2px solid var(--third-color);
+    font-family: Poppins;
+    text-transform: uppercase;
+    color: var(--light);
+    letter-spacing: 3px;
+    padding: 0 2em;
+    transition: all ease-in-out .3s;
+}
+
+footer .contact-footer button:hover {
+    background-color: var(--third-color);
+    color: var(--primary-color);
+}
+
+footer hr {
+    margin-top: 3em;
+}
+
+footer .copyright {
+    padding: 1.5em;
+    text-align: center;
+    font-family: Poppins;
+    color: var(--light);
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+
+/* Responsive */
+/* Home */
+@media (max-width:600px) {
+    body {
+        margin: 0px;
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 10px;
+        padding-top: 5em;
+    }
+
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav>.nav-header>.nav-title::after {
+        content: "RCC";
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid var(--secondary-color);
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+    /*SlideShow*/
+    .SlideShow {
+        height: 100%;
+    }
+
+    /* camping section */
+    #camp-panal{
+        overflow: hidden;
+        min-height: auto;
+        padding: 0;
+    }
+    #camp-panal .photo-data{
+        overflow: hidden;
+        min-height: auto;
+        padding: 0;
+    }
+    #camp-panal {
+        padding: 30px;
+    }
+
+    #camp-panal h2 .title-main {
+        color: var(--primary-color);
+    }
+
+    #camp-panal .photo-data {
+        display: block;
+        justify-content: center;
+    }
+
+    #camp-panal .photo-data img {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    #camp-panal .photo-data .text {
+        max-width: 100%;
+        text-align: justify;
+        line-height: 2em;
+    }
+
+    .overlay{
+        width: 100%;
+        height: 36%;
+        border-radius: 15%;
+    }
+
+    /* pop-up */
+    #modal-popup {
+        max-width: 100%;
+    }
+
+    .center {
+        justify-content: center;
+    }
+
+    .center a {
+        margin: 0 0 20px 99px;
+        padding: 10px;
+    }
+
+
+    /* Offers and Package */
+    #offernpackage .plan .button:hover,
+    .plan .button:focus {
+        display: none;
+    }
+
+    #offernpackage .package-card {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    #offernpackage .package-card .pack-1 {
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    /* Camping Equipment */
+    
+    #campingequi .item-container {
+        display: block;
+    }
+
+    #campingequi .item-card {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    #campingequi .item-card .image-container {
+        height: 350px;
+    }
+
+    #campingequi1 .item-container {
+        display: block;
+    }
+
+    #campingequi1 .item-card {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    #campingequi1 .item-card .image-container {
+        height: 350px;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .youtube iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* furniture */
+    #furniture .item-container {
+        display: block;
+    }
+
+    #furniture .item-container {
+        display: block;
+    }
+
+    #furniture .item-card {
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    #furniture .item-card .image-container {
+        height: 350px;
+    }
+
+    /* Review */
+    #review-form {
+        overflow: hidden;
+        min-height: auto;
+        padding: 0;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-25 {
+        margin-bottom: 20px;
+    }
+
+    #review {
+        min-height: auto;
+        padding: 0;
+    }
+
+    #review .review-container {
+        width: auto;
+    }
+
+    #review .review-contents {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    #review .review-items {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+        border-radius: 0;
+    }
+
+    #review .review-items img {
+        width: 200px;
+        background-color: var(--light);
+        border-radius: 0;
+    }
+
+    #review .review-contents-container {
+        padding: 1em;
+        padding-bottom: 50px;
+        background-color: var(--secondary-color);
+    }
+
+    #review .review-items .comment {
+        font-family: Poppins;
+        color: var(--primary-color);
+    }
+
+    #review .review-rating {
+        display: flex;
+    }
+
+    #review .review-rating p {
+        margin: 0;
+    }
+
+    /* basket */
+
+    .basket-table {
+        display: none;
+    }
+
+    .res-basket {
+        display: block;
+    }
+
+    .detail-container {
+        background-color: var(--light);
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        font-family: Poppins;
+
+    }
+
+    .res-basket .image-container {
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid var(--primary-color);
+    }
+
+    .res-basket .image-container img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .roll1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .roll2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .detail-container .total-all-price {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1em;
+    }
+
+    footer .title-footer {
+        margin-top: 2em;
+        text-align: left;
+    }
+
+    .footer-top {
+        display: block;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .footer-top .brand-icon {
+        font-size: 1.5em;
+    }
+
+
+    .footer-top .social-container {
+        display: flex;
+        margin-top: 1em;
+        justify-content: center;
+    }
+
+    footer .footer-bottom {
+        display: block;
+    }
+
+    footer .footer-bottom>div {
+        width: auto;
+    }
+
+    footer .contact-footer {
+        padding-right: 0;
+    }
+
+    footer .contact-footer input {
+        width: 100%;
+    }
+
+    footer .contact-footer button {
+        width: 100%;
+    }
+
+    footer .copyright {
+        padding: 1em;
+    }
+}
